@@ -31,13 +31,17 @@ const player = new Sprite({
 player.draw();
 
 const enemy = new Sprite({
-  x: 400,
-  y: 100,
-});
-
+    position: {
+      x: 400,
+      y: 100,
+    },
+    velocity: {
+      x: 0,
+      y: 0,
+    },
+  });
 enemy.draw();
 
-console.log(player);
 
 function animate() {
   window.requestAnimationFrame(animate);
